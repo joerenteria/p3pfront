@@ -1,0 +1,50 @@
+.navbar {
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+  text-align: right;
+}
+.navlink {
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.icecreamcard {
+  height: 225px;
+  width: 200px;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  float: left;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.icecreamimage {
+  height: 100px;
+}
+
+.reviewcard {
+  height: 150px;
+  width: 90%;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  float: left;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
