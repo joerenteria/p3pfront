@@ -6,10 +6,8 @@ import { useEffect, useState } from 'react';
 import Home from './Home';
 import Product from './Product';
 import Review from './Review';
+import ReviewForm from './ReviewForm';
 import './App.css';
-
-
-
 
 
 function App() {
@@ -31,88 +29,32 @@ function App() {
     })
   } , [] )
 
-
-
-
-
-
-
-  return (
-    <div className="App">
-
-      
-
-      
-      
-        
-
-
-
-
-
-
-
-
-
-
-
-<BrowserRouter>
+return (
+  <div className="App">
+    <BrowserRouter>
         <NavBar/>
+          <Switch>
+            <Route path="/showproducts">
+              <Product products={products}/>
+            </Route>
 
-            <Switch>
+            <Route path="/showreviews">
+              <Review reviews={reviews}/>
+            </Route>
 
-                
+            <Route path="/reviewform">
+              <ReviewForm reviews={reviews}/>
+            </Route>
 
-                <Route path="/showproducts">
+            <Route path="/">
+              <Home/>
+            </Route>
 
-                  <Product
-                  products={products}
-                  />
+          </Switch>
+    </BrowserRouter>
+   </div>
 
-                </Route>
-
-                <Route path="/showreviews">
-
-                  <Review
-                  reviews={reviews}
-                  />
-
-                </Route>
-
-                <Route path="/">
-
-                <Home/>
-
-                </Route>
-
-                
-
-            </Switch>
-        </BrowserRouter>
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-        
-
-    </div>
-
-
-        
-
-
-  );
+);
 }
 
 export default App;

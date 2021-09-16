@@ -1,9 +1,18 @@
 import React from "react";
-
+import { useHistory } from "react-router-dom";
 
 function Product(props){
+console.log(props)
 
-    return(<div>
+const history = useHistory();
+
+const routeChange = () =>{
+  let path = '/ReviewForm';
+  history.push(path);
+}
+
+
+return(<div>
 {
   props.products.map(
     function(objectIn){
@@ -13,7 +22,7 @@ function Product(props){
                     <h2>{objectIn.brand}</h2>
                     <div>{objectIn.flavor}</div>
                     <div><a href="#">See reviews</a></div>
-                    <div><a href="#">Add a review</a></div>
+                    <div><a href='#' onClick={routeChange}>Add a review</a></div>
                 </div>
             )
     }
