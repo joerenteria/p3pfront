@@ -39,7 +39,25 @@ function App() {
       setReviews( [...reviewsRemaining] )
 
   }
+  const addNewReview = (reviewToAdd)=>{
 
+    const body = JSON.stringify({
+      name: reviewToAdd.name,
+      rating: reviewToAdd.rating,
+      comment: reviewToAdd.comment
+    })
+    
+    fetch("http://localhost:9292/reviews", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body
+  })
+    .then((r) => r.json())
+    .then((newReview) => {setReviews(reviews.concat(newReview))
+})
+}
   // {
   //   users.map(eachUser =>{ return <User key={eachUser.id} userProp={eachUser}  
   //     inAppJsDeleteUser={inAppJsDeleteUser} 
@@ -62,7 +80,7 @@ return (
             </Route>
 
             <Route path="/reviewform">
-              <ReviewForm reviews={reviews}/>
+              <ReviewForm addNewReview={addNewReview} reviews={reviews}/>
             </Route>
 
             <Route path="/">

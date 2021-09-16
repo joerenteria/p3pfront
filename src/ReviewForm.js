@@ -1,69 +1,37 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router';
 
-const ReviewForm = (props)=> {
-console.log(props)
+
+const ReviewForm = ({ addNewReview, reviews })=> {
+console.log(reviews)
 
 const [name, setName] = useState("");
 const [rating, setRating] = useState("");
 const [comment, setComment] = useState("");
 
-
-const changeName=(event)=>{ 
-  setName(event.target.value)
-  console.log(event.target.value)
-} 
-const changeRating=(event)=>{ 
-  setRating(event.target.value)
-  console.log(event.target.value)
-} 
-const changeComment=(event)=>{ 
-  setComment(event.target.value)
-  console.log(event.target.value)
-} 
-const history = useHistory();
-
-const handleSubmit=(event)=>{
+const handleSubmit = (event) =>{
   event.preventDefault(console.log("do you see me?"))
-
-
-let thisReviewForm =
-  {
-    name: name,
-    rating: rating,
-    comment: comment
-  };
-
-  props.addNewReview(thisReviewForm)
-//this is a passed in function from Review component
-fetch("http://localhost:9292/reviews", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(thisReviewForm),
-    })
-      .then((r) => r.json())
-      .then((newForm) => {props.addNewReview(newForm);
-                      ///function passed in from Review
-        history.push("/Review");
- });
+  
+  addNewReview({name, rating, comment})
+ 
 } 
+const resetForm = (event) =>{
+  event.target.reset();
+}
 
 return (<div>
-  <form onSubmit={handleSubmit} className="new-review-form">
+  <form onSubmit={handleSubmit} onSubmit = {resetForm} className="new-review-form">
     <div className="form-title">Leave Your Review Here</div>
       <br></br>
-      <input onChange={changeName} placeholder="NAME"/>
+      <input type="text" id="name" value={name} placeholder="NAME" onChange={(e) => setName(e.target.value)}/>
       <br></br>
       <br></br>
-      <input onChange={changeRating} placeholder="RATING 1-10⭐️"/>
+      <input type="text" id="rating" value={rating} onChange={(e) => setRating(e.target.value)} placeholder="RATING 1-10⭐️"/>
       <br></br>
       <br></br>
-      <input onChange={changeComment} placeholder="LEAVE A COMMENT"/>
+      <input type="text" id="comment" value={comment} onChange={(e) => setComment(e.target.value)} placeholder="LEAVE A COMMENT"/>
       <br></br>
       <br></br>
-    <input type="submit" value="LEAVE REVIEW" />
+    <button type="submit"> LEAVE A REVIEW </button>
   </form>
 </div>)
 }

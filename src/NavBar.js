@@ -38,14 +38,7 @@ function NavBar() {
             </NavLink>
         </div> 
 
-        <div className="navlink">
-            <NavLink
-                to="/reviewform"
-                
-            >
-                Review Form
-            </NavLink>
-        </div> 
+        
         
 
     </div>
