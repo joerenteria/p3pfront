@@ -29,6 +29,23 @@ function App() {
     })
   } , [] )
 
+  const deleteReview =(reviewToDelete)=>{
+    const id = reviewToDelete.id
+    fetch(`http://localhost:9292/reviews/${id}`, {
+      method: 'DELETE'
+    })
+
+      let reviewsRemaining = reviews.filter(eachReview => eachReview.id != reviewToDelete.id)
+      setReviews( [...reviewsRemaining] )
+
+  }
+
+  // {
+  //   users.map(eachUser =>{ return <User key={eachUser.id} userProp={eachUser}  
+  //     inAppJsDeleteUser={inAppJsDeleteUser} 
+  //   /> })
+  // }
+
 return (
   <div className="App">
     <BrowserRouter>
@@ -39,7 +56,9 @@ return (
             </Route>
 
             <Route path="/showreviews">
-              <Review reviews={reviews}/>
+              <Review reviews={reviews}
+              deleteReview={deleteReview}
+              />
             </Route>
 
             <Route path="/reviewform">

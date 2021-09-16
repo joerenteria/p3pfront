@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-import ReviewForm from './ReviewForm';
+import ReviewCard from './ReviewCard';
 
 function Review(props){
 console.log("Show me review", props)
@@ -18,22 +18,26 @@ const addNewReview = (newReview) => {
   setReviews([...reviews, newReview])
 }
 
+
 return(<div>
   {
     props.reviews.map(
       function(objectIn){
       return(
-        <div className="reviewcard">
-          <h2>{objectIn.name}</h2>
-          <div>{objectIn.rating} STARS</div>
-          <div>{objectIn.comment}</div>
-            <div><a href="#">Delete review</a></div>
-        </div>
+        <ReviewCard
+          review={objectIn}
+          key={objectIn.id}
+          deleteReview={props.deleteReview}
+        />
       )
     }
   )
 }
-<ReviewForm addNewReview={addNewReview}/>
+
+
+
+
+
     </div>)
 
 
