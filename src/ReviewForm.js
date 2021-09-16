@@ -10,16 +10,16 @@ const [comment, setComment] = useState("");
 
 const handleSubmit = (event) =>{
   event.preventDefault(console.log("do you see me?"))
-  
+  event.target.reset();
   addNewReview({name, rating, comment})
  
 } 
-const resetForm = (event) =>{
-  event.target.reset();
-}
+// const resetForm = (event) =>{
+//   event.target.reset();
+// }
 
 return (<div>
-  <form onSubmit={handleSubmit} onSubmit = {resetForm} className="new-review-form">
+  <form onSubmit={handleSubmit}  className="new-review-form">
     <div className="form-title">Leave Your Review Here</div>
       <br></br>
       <input type="text" id="name" value={name} placeholder="NAME" onChange={(e) => setName(e.target.value)}/>
