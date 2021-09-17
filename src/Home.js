@@ -25,10 +25,10 @@ function Home(){
             <source src={Pexels} type="video/mp4"/>
         </video>
         <div className="box">
-            <h1> Did you think eating Keto meant you'd never have ice cream again?</h1>
+            <p> Did you think eating Keto meant you'd never have ice cream again?</p>
         </div>
         <div className="box2">
-            <h1>Think again...</h1>
+            <p>Think again...</p>
             <button className="enterbutton" onClick={routeChange}>Enter↪</button> 
         </div>
         

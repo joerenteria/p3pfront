@@ -4,7 +4,10 @@
   margin: auto;
   padding: 10px;
 }
+body a {
+  text-decoration: none;
 
+}
 /* .homecontent {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: larger;
@@ -45,6 +48,8 @@
   padding: 10px;
   background-color: rgb(223, 190, 147);
   opacity: 0.8;
+  font-family: "American Typewriter";
+  
 }
 .navlink2 {
   width: 125px;
@@ -58,6 +63,7 @@
   padding: 10px;
   background-color: rgb(231, 198, 136);
   opacity: 0.8;
+  font-family: "American Typewriter";
  
 }
 .navlink3 {
@@ -72,7 +78,7 @@
   padding: 10px;
   background-color: rgb(236, 151, 81);
   opacity: 0.8;
- 
+  font-family: "American Typewriter";
 }
 .navlink4 {
   width: 125px;
@@ -86,7 +92,7 @@
   padding: 10px;
   background-color: rgb(223, 152, 147);
   opacity: 0.7;
- 
+  font-family: "American Typewriter";
 }
 .button {
   color: black;
@@ -95,24 +101,40 @@
   border: 2px dotted gray;
   opacity: 0.6;
   font-size: 24px;
+  font-family: 'American Typewriter';
+  font-weight: bolder;
   padding: 22px 16px;
   margin-left: 200px;
   border-radius: 50%;
+  transition: background-color 1s;
+}
+.enterbutton:hover{
+  border: 2px dotted gray;
+  opacity: 0.6;
+  background-color: coral;
+  font-family: 'American Typewriter';
+  font-weight: bolder;
+  padding: 22px 16px;
+  margin-left: 200px;
+  border-radius: 50%;
+  
 }
 .box {
   height: 10px;
-  width: 1300px;
+  width: 1500px;
   font-family: 'American Typewriter';
-  font-weight: 100;
+  font-weight: heavy;
+  font-size: 43px;
   padding: 0px;
-  margin: 200px;
+  margin: 200px 50px;
 }
 .box2 {
   width: 500px;
   font-family: 'American Typewriter';
   padding: 20px;
-  margin: 300px;
+  margin: 100px;
   margin-left: 1000px;
+  font-size: 48px;
   
 }
 .icecreamcard {
@@ -131,21 +153,30 @@
 
 .icecreamimage {
   height: 100px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
 }
 
 .reviewcard {
-  width: 90%;
-  border-radius: 5px;
+  width: 400px;
+  border-radius: 15px;
   border-style: dotted;
   border-color: black;
   border-width: 1px;
-  float: left;
+  display: block;
   text-align: left;
-  margin: 10px;
+  margin: 10px auto 10px auto;
   padding: 10px;
   background-color: rgb(241, 190, 148);
+  text-align: center;
+  font-family: "American Typewriter";
+  font-size: 16px;
 }
-
+.ratingNumber {
+  font-size: 24px;
+}
 .new-review-form {
   margin: auto;
   width: 30%;
@@ -154,11 +185,20 @@
   border-color: black;
   border-width: 1px;
   padding: 10px 10px 10px 50px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:"American Typewriter";
+  font-size: 24px;
   background-color: rgb(247, 221, 187);
 }
-
+.deletebutton {
+  border-width: 1px;
+  border-radius: 25px;
+  border-style: groove;
+  font-family: "American Typewriter";
+  font-size: 24px;
+  padding: 10px 15px ;
+}
 .reviewfield {
+  font-family: "American Typewriter";
   width: 400px;
   border-radius: 5px;
   border-style: dotted;
@@ -167,18 +207,23 @@
   margin: 10px;
 }
 .reviewbutton {
+  background-color: coral;
+  opacity: 0.5;
   width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: dotted;
   border-color: black;
   border-width: 1px;
   margin: 10px;
   font-size: 18px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'American Typewriter';
 }
 
 .form-title{
-  font-size: 15px;
-  margin: 10px;
-
+  font-size: 26px;
+  font-weight: 500;
+  margin: 50px;
+  border: dotted;
+  border-width: 0 0 1px 0;
+  
 }

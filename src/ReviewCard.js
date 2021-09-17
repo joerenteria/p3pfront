@@ -82,11 +82,16 @@ function ReviewCard(props) {
 
 
         <div className="reviewcard">
-          <h2>{props.review.name}</h2>
+          <h2>🍨{props.review.name}</h2>
+          <br></br>
           <h2>{flavorout}</h2>
-          <div>{props.review.rating} ⭐️</div>
+          <div className="ratingNumber">{props.review.rating} ⭐️</div>
+          <br></br>
           <div>{props.review.comment}</div>
-        <div><button onClick={localDeleteHandler}  >Delete</button></div>
+          <br></br>
+          <br></br>
+        <div><button className="deletebutton" onClick={localDeleteHandler}  >Delete</button></div>
+        <br></br>
         </div>
             
         )
