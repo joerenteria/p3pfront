@@ -5,7 +5,7 @@
   padding: 10px;
 }
 
-.homecontent {
+/* .homecontent {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: larger;
   line-height:200%;
@@ -13,11 +13,12 @@
   display: block;
   margin: auto;
   padding: 10px;
-}
+} */
 
 .logo {
   display: block;
   margin: 10px;
+ 
 }
 
 .navbar {
@@ -28,8 +29,11 @@
   margin: 10px;
   padding: 10px 50px 10px 10px;
   text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aquamarine;
+  opacity: 0.9;
 }
-.navlink {
+.navlink1 {
   width: 125px;
   display: inline-block;
   text-align: center;
@@ -39,8 +43,78 @@
   border-width: 1px;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(223, 190, 147);
+  opacity: 0.8;
 }
-
+.navlink2 {
+  width: 125px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(231, 198, 136);
+  opacity: 0.8;
+ 
+}
+.navlink3 {
+  width: 125px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(236, 151, 81);
+  opacity: 0.8;
+ 
+}
+.navlink4 {
+  width: 125px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(223, 152, 147);
+  opacity: 0.7;
+ 
+}
+.button {
+  color: black;
+}
+.enterbutton{
+  border: 2px dotted gray;
+  opacity: 0.6;
+  font-size: 24px;
+  padding: 22px 16px;
+  margin-left: 200px;
+  border-radius: 50%;
+}
+.box {
+  height: 10px;
+  width: 1300px;
+  font-family: 'American Typewriter';
+  font-weight: 100;
+  padding: 0px;
+  margin: 200px;
+}
+.box2 {
+  width: 500px;
+  font-family: 'American Typewriter';
+  padding: 20px;
+  margin: 300px;
+  margin-left: 1000px;
+  
+}
 .icecreamcard {
   width: 200px;
   height: 225px;
@@ -52,6 +126,7 @@
   text-align: center;
   margin: 10px;
   padding: 10px;
+  background-color: #92a8d1;
 }
 
 .icecreamimage {
@@ -68,16 +143,19 @@
   text-align: left;
   margin: 10px;
   padding: 10px;
+  background-color: rgb(241, 190, 148);
 }
 
 .new-review-form {
   margin: auto;
-  width: 80%;
+  width: 30%;
   border-radius: 5px;
   border-style: dotted;
   border-color: black;
   border-width: 1px;
   padding: 10px 10px 10px 50px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(247, 221, 187);
 }
 
 .reviewfield {
@@ -89,12 +167,14 @@
   margin: 10px;
 }
 .reviewbutton {
-  width: 400px;
+  width: 200px;
   border-radius: 5px;
   border-style: dotted;
   border-color: black;
   border-width: 1px;
   margin: 10px;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form-title{

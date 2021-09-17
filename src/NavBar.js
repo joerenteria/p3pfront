@@ -11,8 +11,8 @@ function NavBar() {
     <div className="navbar" >
 
 
-        <div className="navlink">
-            <NavLink
+        <div className="navlink1">
+            <NavLink className="button"
                 to="/"
                 exact
             >
@@ -20,8 +20,8 @@ function NavBar() {
             </NavLink>
         </div>          
 
-        <div className="navlink">
-            <NavLink
+        <div className="navlink2">
+            <NavLink className="button"
                 to="/showproducts"
                 
             >
@@ -29,8 +29,8 @@ function NavBar() {
             </NavLink>
         </div> 
 
-        <div className="navlink">
-            <NavLink
+        <div className="navlink3">
+            <NavLink className="button"
                 to="/showreviews"
                 
             >
@@ -38,8 +38,8 @@ function NavBar() {
             </NavLink>
         </div> 
 
-        <div className="navlink">
-            <NavLink
+        <div className="navlink4">
+            <NavLink className="button"
                 to="/reviewform"
                 
             >

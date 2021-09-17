@@ -9,7 +9,7 @@ import Review from './Review';
 import ReviewForm from './ReviewForm';
 import './App.css';
 import Logo from './images/logo.png';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
 
@@ -69,8 +69,10 @@ function App() {
 return (
   <div className="App">
     <img class="logo" src={Logo} alt="logo"/>
+   
     <BrowserRouter>
         <NavBar/>
+        <FontAwesomeIcon icon="fa-solid fa-ice-cream" />
           <Switch>
             <Route path="/showproducts">
               <Product products={products}

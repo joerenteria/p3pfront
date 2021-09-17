@@ -9,9 +9,9 @@ const history = useHistory();
 const routeChange = () =>{
   history.push("/reviewform");
 }
-const routeChangeToReviewPage = () =>{
-  history.push("/showreviews");
-}
+// const routeChangeToReviewPage = () =>{
+//   history.push("/showreviews");
+// }
 
 return(<div>
 {
