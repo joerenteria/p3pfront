@@ -1,14 +1,36 @@
+.App {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.homecontent {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: larger;
+  line-height:200%;
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.logo {
+  display: block;
+  margin: 10px;
+}
+
 .navbar {
   border-radius: 5px;
   border-style: dotted;
   border-color: black;
   border-width: 1px;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 50px 10px 10px;
   text-align: right;
 }
 .navlink {
-  width: 100px;
+  width: 125px;
   display: inline-block;
   text-align: center;
   border-radius: 5px;
@@ -20,8 +42,8 @@
 }
 
 .icecreamcard {
-  height: 225px;
   width: 200px;
+  height: 225px;
   border-radius: 5px;
   border-style: dotted;
   border-color: black;
@@ -37,7 +59,6 @@
 }
 
 .reviewcard {
-  height: 150px;
   width: 90%;
   border-radius: 5px;
   border-style: dotted;
@@ -47,4 +68,37 @@
   text-align: left;
   margin: 10px;
   padding: 10px;
+}
+
+.new-review-form {
+  margin: auto;
+  width: 80%;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  padding: 10px 10px 10px 50px;
+}
+
+.reviewfield {
+  width: 400px;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+}
+.reviewbutton {
+  width: 400px;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: black;
+  border-width: 1px;
+  margin: 10px;
+}
+
+.form-title{
+  font-size: 15px;
+  margin: 10px;
+
 }

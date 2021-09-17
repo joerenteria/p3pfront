@@ -22,8 +22,8 @@ return(<div>
                     <img className="icecreamimage" src={objectIn.image} alt={objectIn.flavor} />
                     <h2>{objectIn.brand}</h2>
                     <div>{objectIn.flavor}</div>
-                    <div><a href='#' onClick={routeChangeToReviewPage}>See reviews</a></div>
                     <div><a href='#' onClick={routeChange}>Add a review</a></div>
+                  
                 </div>
             )
     }

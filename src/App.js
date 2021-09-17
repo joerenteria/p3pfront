@@ -8,6 +8,7 @@ import Product from './Product';
 import Review from './Review';
 import ReviewForm from './ReviewForm';
 import './App.css';
+import Logo from './images/logo.png';
 
 
 function App() {
@@ -44,7 +45,8 @@ function App() {
     const body = JSON.stringify({
       name: reviewToAdd.name,
       rating: reviewToAdd.rating,
-      comment: reviewToAdd.comment
+      comment: reviewToAdd.comment,
+      product_id: reviewToAdd.product_id
     })
     
     fetch("http://localhost:9292/reviews", {
@@ -66,11 +68,14 @@ function App() {
 
 return (
   <div className="App">
+    <img class="logo" src={Logo} alt="logo"/>
     <BrowserRouter>
         <NavBar/>
           <Switch>
             <Route path="/showproducts">
-              <Product products={products}/>
+              <Product products={products}
+              reviews={reviews}
+              />
             </Route>
 
             <Route path="/showreviews">

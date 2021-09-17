@@ -34,7 +34,16 @@ function NavBar() {
                 to="/showreviews"
                 
             >
-                Reviews
+                See Reviews
+            </NavLink>
+        </div> 
+
+        <div className="navlink">
+            <NavLink
+                to="/reviewform"
+                
+            >
+                Add a Review
             </NavLink>
         </div> 
 
